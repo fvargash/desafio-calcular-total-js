@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cotainer-fluid d-flex justify-content-center">
+            <div class="card my-5 bg-light" style="width: 18rem; height: 31rem;">
+                <img src="./assets/img/Modern Gaming Laptop Promotion Instagram Post.png" class="card-img-top" alt="#">
+                <div class="card-body">
+                    <h5 class="card-title">Notebook New Series</h5>
+                    <input id="cantidad" type="number" placeholder="Cantidad">
+                    <input id="color" type="text" placeholder="Color">
+                    <p>PRECIO: $ <span id="precio">550000</span></p>
+                    <button href="#" class="btn btn-primary" onclick="
+                    preciototal.innerHTML = Number(cantidad.value) * Number(precio.innerHTML);
+                    cantidadtotal.innerHTML = cantidad.value;
+                    colorfinal.style.backgroundColor = color.value;">Calcular Total</button>
+                </div>
+            </div>
+                <div class="contenido m-5 py-4">
+                    <h1>TOTAL: $<span id="preciototal">0</span></h1>
+                    <h1>CANTIDAD: <span id="cantidadtotal">0</span></h1>
+                    <h1 class="d-flex" id="colorfinal">COLOR: 
+                        <div class="circulocolor"></div>
+                    </h1>
+                </div>
+                <script src="./assets/js/script.js"></script>
+    </div>
+    
+</body>
+</html>
